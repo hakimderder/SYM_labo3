@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Labo3</string>
+    <string name="NFC_button">NFC</string>
+    <string name="iBeacon_button">iBeacon</string>
+    <string name="codebarre_button">Code-barre</string>
+    <string name="NFC_email">Enter email</string>
+    <string name="NFC_pw">Enter password</string>
+
+</resources>
