@@ -1,3 +1,6 @@
+/**
+ * Inspiré de : https://code.tutsplus.com/tutorials/reading-nfc-tags-with-android--mobile-17278
+ */
 package ch.heigvd.iict.sym.lab.labo3;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,7 +11,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
-import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -62,14 +64,14 @@ public class NFCActivity extends AppCompatActivity {
         }
         connect.setOnClickListener(view -> {
             Timestamp now = new Timestamp(System.currentTimeMillis());
-            //reset si + de 10 sec
-            if(lastNfc + 10000 < now.getTime()){
+
+            if(lastNfc + NfcConstants.TIME_LOW < now.getTime()){
                 nfcIsValid = false;
             }
             if(usernameET.getText().toString().equals(username) && passwordET.getText().toString().equals(password) ){
                 if(nfcIsValid){
-                    //Passez le lastScan à la nouvelle activité
                     Intent intent = new Intent(NFCActivity.this, NFCActivitySecond.class);
+                    intent.putExtra("lastNfcTime", lastNfc);
                     startActivity(intent);
                 }else {
                     Toast.makeText(this, "Invalid NFC", Toast.LENGTH_SHORT).show();
