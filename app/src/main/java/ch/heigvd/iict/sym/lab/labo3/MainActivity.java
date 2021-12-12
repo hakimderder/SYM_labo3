@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         iBeacon = findViewById(R.id.iBeacon_button);
 
         codebarre.setOnClickListener(view -> {
-            Intent intent = new Intent(this, CodeBarreActivity.class);
+            Intent intent = new Intent(this, BarcodeActivity.class);
             startActivity(intent);
         });
         iBeacon.setOnClickListener(view -> {
