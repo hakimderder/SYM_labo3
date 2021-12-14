@@ -6,5 +6,8 @@
     <string name="NFC_username">Username</string>
     <string name="NFC_pw">Password</string>
     <string name="NFC_connect_button">Connect</string>
+    <string name="max_security_button">Max Security</string>
+    <string name="low_security_button">Low Security</string>
+    <string name="medium_security_button">Medium Security</string>
 
 </resources>
