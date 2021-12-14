@@ -3,7 +3,11 @@
     <string name="NFC_button">NFC</string>
     <string name="iBeacon_button">iBeacon</string>
     <string name="codebarre_button">Code-barre</string>
-    <string name="NFC_email">Enter email</string>
-    <string name="NFC_pw">Enter password</string>
+    <string name="NFC_username">Username</string>
+    <string name="NFC_pw">Password</string>
+    <string name="NFC_connect_button">Connect</string>
+    <string name="max_security_button">Max Security</string>
+    <string name="low_security_button">Low Security</string>
+    <string name="medium_security_button">Medium Security</string>
 
 </resources>
