@@ -15,6 +15,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.lang.ref.WeakReference;
 import java.sql.Timestamp;
 
+
+/***
+ * Auteurs : Derder Hakim, Penalva Carl, Tomic Mario
+ */
 public class NFCActivitySecond extends AppCompatActivity {
 
     private long lastNfc;

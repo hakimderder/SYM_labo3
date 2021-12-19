@@ -18,6 +18,9 @@ import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+/***
+ * Auteurs : Derder Hakim, Penalva Carl, Tomic Mario
+ */
 public class NFCUtils {
 
     public static final String MIME_TEXT_PLAIN = "text/plain";

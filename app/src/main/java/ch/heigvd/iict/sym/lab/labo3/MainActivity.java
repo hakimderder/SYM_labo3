@@ -7,6 +7,9 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+/***
+ * Auteurs : Derder Hakim, Penalva Carl, Tomic Mario
+ */
 public class MainActivity extends AppCompatActivity {
 
     private Button NFC;

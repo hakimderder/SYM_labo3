@@ -18,6 +18,9 @@ import android.widget.Toast;
 import java.lang.ref.WeakReference;
 import java.sql.Timestamp;
 
+/***
+ * Auteurs : Derder Hakim, Penalva Carl, Tomic Mario
+ */
 public class NFCActivity extends AppCompatActivity {
 
     private static final String username = "User1";

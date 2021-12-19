@@ -27,6 +27,9 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
+/***
+ * Auteurs : Derder Hakim, Penalva Carl, Tomic Mario
+ */
 public class BarcodeActivity extends AppCompatActivity {
     private DecoratedBarcodeView barcodeView;
     private String lastText;

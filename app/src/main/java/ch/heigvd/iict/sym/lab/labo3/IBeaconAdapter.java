@@ -12,7 +12,14 @@ import org.altbeacon.beacon.Beacon;
 
 import java.util.ArrayList;
 
-//https://stackoverflow.com/questions/8166497/custom-adapter-for-list-view
+
+/***
+ * Adaptateur pour le tableau de beacon
+ *
+ * Inspiré de //https://stackoverflow.com/questions/8166497/custom-adapter-for-list-view
+ *
+ * Auteurs : Derder Hakim, Penalva Carl, Tomic Mario
+ */
 public class IBeaconAdapter extends ArrayAdapter<Beacon> {
 
     private int resourceLayout;

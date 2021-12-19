@@ -24,7 +24,13 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 
-
+/***
+ * Partie 4 du labo, permet d'afficher différentes caractéristiques des iBeacon à proximité
+ *
+ * Inspiré de https://altbeacon.github.io/android-beacon-library/samples.html
+ *
+ * Auteurs : Derder Hakim, Penalva Carl, Tomic Mario
+ */
 public class IBeaconActivity extends AppCompatActivity {
 
     private static final int PERMISSION_REQUEST_FINE_LOCATION = 1;
@@ -53,6 +59,7 @@ public class IBeaconActivity extends AppCompatActivity {
 
     }
 
+    // Récupère la liste des iBeacons actifs
     Observer monitoringObserver = (Observer<Collection<Beacon>>) beacons -> {
         allBeacons.clear();
         allBeacons.addAll(beacons);
@@ -61,7 +68,7 @@ public class IBeaconActivity extends AppCompatActivity {
     };
 
 
-
+    // Demande la permission pour la localisation
     private void CheckPermissions(){
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) !=
                 PackageManager.PERMISSION_GRANTED) {
@@ -71,6 +78,7 @@ public class IBeaconActivity extends AppCompatActivity {
         }
     }
 
+    // Affiche un toast si l'utilisateur refuse à l'application d'accéder à la localisation
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
